@@ -483,7 +483,7 @@ const normalizeCategory = (category) => {
         image: image
             ? image.startsWith("http") || image.startsWith("blob:")
                 ? image
-                : `http://127.0.0.1:8000/storage/${image}`
+                : `https://your-laravel-app.onrender.com/storage/${image}`
             : fallbackImage,
 
         status: status === "inactive" ? "Inactive" : "Active",

@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHashHistory, createWebHistory } from "vue-router";
 import Home from "../Admin/Page/Home.vue";
 import Product from "../Admin/Page/Product.vue";
 import Category from "../Admin/Page/Category.vue";
@@ -68,7 +68,6 @@ const routes = [
     { path: "/admin", name: "admin-home", component: Home, meta: { requiresAuth: true, role: "admin" } },
     { path: "/admin/products", name: "admin-products", component: Product, meta: { requiresAuth: true, role: "admin" } },
     { path: "/admin/categories", name: "admin-categories", component: Category, meta: { requiresAuth: true, role: "admin" } },
-    { path: "/admin/suppliers", name: "admin-suppliers", component: Supplier, meta: { requiresAuth: true, role: "admin" } },
     { path: "/admin/stock-in", name: "admin-stock-in", component: StockIn, meta: { requiresAuth: true, role: "admin" } },
     { path: "/admin/stock-out", name: "admin-stock-out", component: StockOut, meta: { requiresAuth: true, role: "admin" } },
     { path: "/admin/purchase", name: "admin-purchase", component: Purchase, meta: { requiresAuth: true, role: "admin" } },
