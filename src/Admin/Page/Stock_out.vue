@@ -216,18 +216,6 @@
                 placeholder="OUT-2026-0001"
               />
             </label>
-
-            <label class="grid min-w-0 gap-2 text-[13px] font-black text-[#223763]">
-              Stock Out Date
-              <input
-                v-model="stockOutForm.stockOutDate"
-                type="date"
-                required
-                :readonly="isViewing"
-                class="min-w-0 rounded-lg border border-slate-200 px-4 py-3 text-[13px] font-semibold outline-none focus:border-blue-500 read-only:bg-slate-50"
-              />
-            </label>
-
             <label class="grid min-w-0 gap-2 text-[13px] font-black text-[#223763]">
               Status
               <select
