@@ -244,7 +244,7 @@ const route = useRoute();
 const isReadOnly = computed(() => Boolean(route.meta.readOnly));
 import { getAuthHeaders, getCurrentUser } from "../../utils/auth";
 
-const apiBaseUrl = (import.meta.env.VITE_API_BASE_URL || "https://laravel-inventory-management-1.onrender.com").replace(/\/+$/, "");
+const apiBaseUrl = (import.meta.env.VITE_API_BASE_URL || "https://laravel-inventory-management-2.onrender.com").replace(/\/+$/, "");
 
 const loading = ref(false);
 const errorMessage = ref("");

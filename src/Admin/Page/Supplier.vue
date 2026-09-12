@@ -374,7 +374,7 @@ import Sidebar from "../../Components/RoleSidebar.vue";
 import DeleteConfirmModal from "../Components/DeleteConfirmModal.vue";
 import { getAuthHeaders, getCurrentUserId } from "../../utils/auth";
 
-const apiBaseUrl = (import.meta.env.VITE_API_BASE_URL || "https://laravel-inventory-management-1.onrender.com").replace(/\/+$/, "");
+const apiBaseUrl = (import.meta.env.VITE_API_BASE_URL || "https://laravel-inventory-management-2.onrender.com").replace(/\/+$/, "");
 const suppliersEndpoint = `${apiBaseUrl}/suppliers`;
 const usersEndpoint = `${apiBaseUrl}/users`;
 const route = useRoute();

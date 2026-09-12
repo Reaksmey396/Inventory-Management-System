@@ -6,5 +6,4 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [vue(), tailwindcss()],
   base: '/Inventory-Management-System/',
-  plugins: [vue()]
 })
