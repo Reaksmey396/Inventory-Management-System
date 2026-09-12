@@ -102,7 +102,7 @@ const showPassword = ref(false);
 const loading = ref(false);
 const errorMessage = ref("");
 
-const apiBaseUrl = (import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000/api").replace(/\/+$/, "");
+const apiBaseUrl = (import.meta.env.VITE_API_BASE_URL || "https://laravel-inventory-management-1.onrender.com").replace(/\/+$/, "");
 const loginEndpoint = `${apiBaseUrl}/login`;
 const telegramRequestMessage = "Hello, I would like to request an Inventory Management System account. Please help me create one.";
 const telegramContactUrl = `https://t.me/khimreaksmey?text=${encodeURIComponent(telegramRequestMessage)}`;

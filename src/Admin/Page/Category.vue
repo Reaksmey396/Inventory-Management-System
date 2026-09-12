@@ -347,7 +347,7 @@ import DeleteConfirmModal from "../Components/DeleteConfirmModal.vue";
 import { getAuthHeaders, getCurrentUserId } from "../../utils/auth";
 
 // API
-const apiBaseUrl = (import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000/api").replace(/\/+$/, "");
+const apiBaseUrl = (import.meta.env.VITE_API_BASE_URL || "https://laravel-inventory-management-1.onrender.com").replace(/\/+$/, "");
 const categoriesEndpoint = `${apiBaseUrl}/categories`;
 const usersEndpoint = `${apiBaseUrl}/users`;
 const route = useRoute();

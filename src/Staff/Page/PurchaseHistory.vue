@@ -110,7 +110,7 @@ import { computed, onMounted, ref } from "vue";
 import Sidebar from "../Components/Sidebar.vue";
 import { getAuthHeaders } from "../../utils/auth";
 
-const apiBaseUrl = (import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000/api").replace(/\/+$/, "");
+const apiBaseUrl = (import.meta.env.VITE_API_BASE_URL || "https://laravel-inventory-management-1.onrender.com").replace(/\/+$/, "");
 const records = ref([]);
 const loading = ref(false);
 const noticeMessage = ref("");

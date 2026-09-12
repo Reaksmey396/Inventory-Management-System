@@ -382,7 +382,7 @@ const isStaffArea = computed(() => route.path.startsWith("/staff/"));
 const isReadOnly = computed(() => Boolean(route.meta.readOnly));
 const showAuditColumns = computed(() => route.path.startsWith("/admin/"));
 const canEditTransactions = computed(() => !isReadOnly.value && !isStaffArea.value);
-const apiBaseUrl = (import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000/api").replace(/\/+$/, "");
+const apiBaseUrl = (import.meta.env.VITE_API_BASE_URL || "https://laravel-inventory-management-1.onrender.com").replace(/\/+$/, "");
 const stockOutsEndpoint = `${apiBaseUrl}/stock-outs`;
 const stockOutDetailsEndpoint = `${apiBaseUrl}/stock-out-details`;
 const productsEndpoint = `${apiBaseUrl}/products`;
